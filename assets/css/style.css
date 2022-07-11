@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap);
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+
+  #navitem a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  #navitem a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  #navitem a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  #navitem a{
+    color: black;
+    position: relative;
+    font-size: 1.5rem;
+    gap: 50px;
+  }
+ 
+ #home{
+    background-image: url(/images-videos/wallpaper.png);
+    background-repeat: no-repeat;
+   background-size: cover;
+
+ }
+#section2-txt{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  
+}
+#comp{
+  
+  height: 3rem;
+  background-color: orangered;
+  color: whitesmoke;
+  font-size: 1.5rem;
+
+  
+  
+    font-family: 'Baskervville', serif;
+
+}
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:link {
+  color: inherit;
+}
+
+.post--card {
+  max-width:765px;
+  min-wdth:320px;
+/*   margin: 15px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px 2px #ddd;
+  border-radius: 2px;
+}
+
+.post--card header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.header {
+  color: #424242;
+  font-weight: 600;
+  margin-left: 8px;
+}
+.post--date::before { 
+  content:',';
+  margin-right: 0.6em;
+}
+.post--date {
+  font-weight: 400;
+  color:#757575;
+}
+.post--card article {
+  font-weight: 400;
+  color: #616161;
+  line-height: 1.5;
+}
+
+.post--card footer{
+  margin: 1rem;
+  margin-bottom: 0;
+  color: #BDBDBD;
+}
+.post--card footer span { 
+  position: relative;
+}
+.post--card footer span:last-of-type:before{
+  content: '\2022';
+  margin-right: 3px;
+}
+.post-reply {
+  color: #2979FF;
+  text-decoration: none;
+}
+.reply {
+  margin-top: 1rem;
+}
+.reply input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid rgba(0,0,0,0.4);
+/*   border-radius: 2rem; */
+  color: #757575;
+  outline: none;
+}
+.comment__area {
+  margin: 1rem;
+}
+div[id^="post"] {
+  max-height: 256px;
+  overflow-y: scroll;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+[name='data-post']:last-of-type {  border-bottom:none; }
+[name='data-post'] {
+  padding: 0.256rem;
+  color: #757575;
+  list-style: decimal;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  outline: none;
+}
+[name='data-post']  small {
+   color: #BDBDBD;
+}
+.hidden {
+  display:none;
+}
+@media screen and (max-width: 420px) {
+  .post--card header {
+    flex-direction: column;
+  }
+  .header,
+  .post--date::before {
+    content:'';
+    margin: 0;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Baskervville&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap");
+html,
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* navigation 
+ - show navigation always on the large screen devices with (min-width:1024)
+*/
+
+@media (min-width: 1024px) {
+  .top-navbar {
+    display: inline-flex !important;
+  }
+}

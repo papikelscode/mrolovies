@@ -1,0 +1,33 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+/* html,
+body {
+    margin-top: 20%;
+  font-family: 'Roboto Mono', monospace;
+  background: #212121;
+  height: 50%;
+} */
+.containersy {
+    margin-top: 5%;
+  height: 100%;
+  width: 150%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+.text {
+  font-weight: 100;
+  font-size: 50px;
+  color: goldenrod;
+}
+.dud {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .text{
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+  }
