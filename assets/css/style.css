@@ -7,7 +7,12 @@
     transition: all 0.25s;
     position: relative;
   }
-  
+  #more {display: none;}
+  /* #bl-container{
+    display:none;
+    width: 80%;
+    height: 10rem;
+  } */
   .hamburger-top,
   .hamburger-middle,
   .hamburger-bottom {
@@ -68,11 +73,18 @@
     font-size: 1.5rem;
     gap: 50px;
   }
- 
+ .pt-1{
+  font-size: 40px;
+  font-weight: 500;
+    font-family: 'Kaushan Script', handwriting;
+
+
+ }
+ @import url(https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap);
  #home{
-    background-image: url(/images-videos/wallpaper.png);
+    /* background-image: url(/images-videos/wallpaper.png);
     background-repeat: no-repeat;
-   background-size: cover;
+   background-size: cover; */
 
  }
 #section2-txt{
@@ -91,6 +103,14 @@
   
     font-family: 'Baskervville', serif;
 
+}.down{
+  margin-left: 25%
+}
+.ebook{
+  margin-left: 15%;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 /*
