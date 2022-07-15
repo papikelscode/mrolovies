@@ -249,6 +249,10 @@ p{
   html{
     font-size: 92.5%;
   }
+  body{
+   
+    overflow-x: hidden;
+  }
 }
 @media screen and (max-width:640px){
   html{
@@ -257,6 +261,14 @@ p{
   p{
     font-size: 1.1rem;
   }
+  body{
+   
+    overflow-x: hidden;
+  }
+  html{
+    overflow-x: hidden;
+  }
+  
 }
 #overlayer {
   width:100%;
@@ -472,6 +484,14 @@ div[id^="post"] {
     content:'';
     margin: 0;
   }
+  body{
+   
+    overflow-x: hidden;
+  }
+  html{
+    overflow-x: hidden;
+  }
+  
 }
 
 @import url(https://fonts.googleapis.com/css2?family=Baskervville&display=swap);
@@ -485,12 +505,23 @@ div[id^="post"] {
   .top-navbar {
     display: inline-flex !important;
   }
+  html{
+    overflow-x: hidden;
+  }
+  
 }
 
 @media screen and (max-width: 640px) {
 div{
   margin-bottom: 20px;
   margin-top: 10px;
+}
+body{
+ 
+  overflow-x: hidden;
+}
+html{
+  overflow-x: hidden;
 }
 
 }
