@@ -402,6 +402,14 @@ p{
   box-shadow: 0 0 20px 2px #ddd;
   border-radius: 2px;
 }
+footer ul{
+  margin-left: 20%;
+  margin-right: 10%;
+}
+footer span{
+  margin-left: 30%;
+  margin-right: 20%;
+}
 
 .post--card header {
   display: flex;
