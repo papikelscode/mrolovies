@@ -48,3 +48,12 @@ ul li{
 #footer{
     height: 15rem;
 }
+
+@media only screen and (max-width: 600px) {
+ #footer{
+    height:30rem;
+ }
+ ul li{
+    font-size: 15px;
+}
+  }
